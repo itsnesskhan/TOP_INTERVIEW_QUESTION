@@ -18,8 +18,8 @@ public class JumpGame {
 	
 	public static void main(String[] args) {
 		int[] arr = {2,3,1,1,4};
-		int[] arr2 = {2,3,1,1,4};
+		int[] arr2 = {2,2,0,1,4,0,1};
 		int[] arr3 = {0,1};
-		System.out.println(canJump(arr));
+		System.out.println(canJump(arr2));
 	}
 }

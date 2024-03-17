@@ -4,10 +4,11 @@ import java.util.Arrays;
 
 public class MergeTwoSortedArray {
 
-	private static void merge(int[] arr1, int[] arr2) {
-		int len1 = 0;
+	private static void merge(int[] arr1, int m, int[] arr2, int n) {
+		int len1 = m;
+		int len2 = n;
 		
-		for(int i=0;i<arr2.length;i++) {
+		for(int i=0;i<len2;i++) {
 			arr1[len1] = arr2[i];
 			len1++;
 		}
@@ -18,7 +19,7 @@ public class MergeTwoSortedArray {
 	public static void main(String[] args) {
 		int arr1[] = {1,2,3,0,0,0};
 		int arr2[] = {2,5,6};
-		merge(arr1 ,arr2);
+		merge(arr1 , 3, arr2,3);
 		System.out.println(Arrays.toString(arr1));
 	}
 
